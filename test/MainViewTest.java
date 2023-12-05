@@ -15,7 +15,6 @@ import javax.swing.JSeparator;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Disabled;
 import mainview.MainView;
 
 public class MainViewTest {
@@ -35,7 +34,6 @@ public class MainViewTest {
         assertTrue(path.toFile().exists(), "Das Bild ist nicht vorhanden.");
     }
 
-    @Disabled
     @Test
     void window_is_ready() {
         assertAll(
@@ -45,25 +43,21 @@ public class MainViewTest {
                 () -> assertNotNull(view.getTabbedPane()));
     }
 
-    @Disabled
     @Test
     void check_menu_notNull() {
         assertNotNull(view.getMenuBar());
     }
 
-    @Disabled
     @Test
     void check_starttab_notNull() {
         assertNotNull(view.getStartTab());
     }
 
-    @Disabled
     @Test
     void check_statusleiste_notNull() {
         assertNotNull(view.getStatusleiste());
     }
 
-    @Disabled
     @Test
     void check_statusleiste_layout() {
 
@@ -76,7 +70,6 @@ public class MainViewTest {
                 () -> assertTrue(components[1] instanceof JPanel));
     }
 
-    @Disabled
     @Test
     void check_menuBar_layout() {
 
